@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base target="_top">
+        <?!= include('css'); ?>
+    </head>
+    <body>
+        <h1 class="title">For PXO</h1>
+        <div id="formman">
+            <form id="myForm">
+                <input name="myFile" type="file" multiple />
+                <br><br><br><br>
+                <input type="button" class="action" value="アップロード" onclick="google.script.run.sendForm(this.parentNode)" />
+            </form>
+        </div>
+        <?!= include('js'); ?>
+    </body>
+</html>
